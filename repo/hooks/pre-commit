@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+echo "commit message from example hook."
+echo "aborting commit since this is only for testing purposes."
+exit 1
