@@ -27,13 +27,18 @@ relpath () {
 }
 
 output_result() {
+  reset=$(tput sgr0)
   if test $1 -eq 0
   then
-    echo -e ' \e[32m✓\e[39m'
+    green=$(tput setaf 2)
+    echo " ${green}✓${reset}"
   else
-    echo ' \033[31m✘\e[39m'
+    red=$(tput setaf 1)
+    echo " ${red}✘${reset}"
   fi
 }
+
+
 
 bold=`tput bold`
 normal=`tput sgr0`
