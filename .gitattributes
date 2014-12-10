@@ -1,5 +1,6 @@
 repo/commands/git-example  export-ignore
 repo/config/config  export-ignore
 repo/hooks/pre-commmit  export-ignore
+.gitattributes  export-ignore
 README.md  export-ignore
 LICENSE  export-ignore
