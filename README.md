@@ -45,11 +45,9 @@ Example output
 
 Usage
 =====
-To bootstrap a version of this script that can be copied to a new project run
+To bootstrap a version of this script to a git project directory run
 
-    mkdir /tmp/git-repo-setup
-    git archive HEAD | tar -x -C /tmp/git-repo-setup
-    ls -la /tmp/git-repo-setup
+    ./bootstrap.sh /home/user/my-repo-dir
 
 
 Testing
