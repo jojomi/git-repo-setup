@@ -82,7 +82,9 @@ fi
 
 # custom commands
 echo '--- enabling project custom git commands'
-for COMMAND_FILE in "$DIR/commands/"*
+FILES=$(find "$DIR/commands" -type f)
+echo $FILES
+for COMMAND_FILE in $FILES
 do
   COMMAND_NAME=$(basename $COMMAND_FILE)
   COMMAND_NAME_SHORT=$(echo "$COMMAND_NAME" | sed -e 's/^git-//g')
